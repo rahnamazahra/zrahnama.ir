@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>زهرا رهنما | Backend Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+  <title>زهرا رهنما | Laravel Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
   <style>
@@ -16,12 +16,6 @@
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      animation: fadeIn 1.5s ease-in;
-    }
-
-    @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(10px);}
-      to {opacity: 1; transform: translateY(0);}
     }
 
     header {
@@ -32,19 +26,36 @@
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.7rem;
       margin-bottom: 0.5rem;
+      font-weight: 800;
     }
 
     header p {
       font-size: 1.2rem;
-      opacity: 0.85;
+      opacity: 0.9;
+      font-weight: 300;
     }
 
     .section {
-      max-width: 800px;
-      margin: 2rem auto;
+      max-width: 850px;
+      margin: 2.5rem auto;
       padding: 0 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #a371f7;
+      font-weight: 700;
+    }
+
+    .card {
+      background: #161b22;
+      padding: 1.4rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      border: 1px solid #21262d;
     }
 
     .btn {
@@ -86,10 +97,17 @@
 <body>
   <header>
     <h1>زهرا رهنما</h1>
-    <p>برنامه‌نویس Laravel </p>
+    <p>توسعه‌دهنده بک‌اند Laravel</p>
+
     <div class="links">
       <a class="btn" href="https://github.com/rahnamazahra" target="_blank">
         <i class="bi bi-github"></i> GitHub
+      </a>
+      <a class="btn" href="https://www.linkedin.com/in/zahrarahnama" target="_blank">
+        <i class="bi bi-linkedin"></i> LinkedIn
+      </a>
+      <a class="btn" href="https://zrahnama.ir" target="_blank">
+        <i class="bi bi-globe"></i> وبسایت شخصی
       </a>
       <a class="btn" href="/Resume.pdf" download>
         <i class="bi bi-download"></i> دانلود رزومه
@@ -97,12 +115,75 @@
     </div>
   </header>
 
+  <!-- درباره من -->
   <div class="section">
     <h2>درباره من</h2>
-    <p>
-      من یک توسعه‌دهنده فول‌استک هستم که عاشق یادگیری تکنولوژی‌های جدیدم. 
-      فعلاً تمرکز اصلی‌ام روی فریم‌ورک‌ Laravel هست.
-    </p>
+    <div class="card">
+      <p>
+        توسعه‌دهنده Laravel با تجربه در طراحی API، معماری سرور، توسعه SaaS و پیاده‌سازی الگوهای طراحی. 
+        مسلط به نوشتن کد تمیز و بهینه، به همراه تجربه عمیق در کار با دیتابیس‌ها و معماری‌های ماژولار.  
+        همیشه مشتاق یادگیری و حل چالش‌های پیچیده بک‌اند.
+      </p>
+    </div>
+  </div>
+
+  <!-- تجربه کاری -->
+  <div class="section">
+    <h2>تجربه کاری</h2>
+
+    <div class="card">
+      <strong>AustroByte GmbH — Back End Developer</strong><br>
+      <small>2025 - اکنون | اتریش</small>
+      <p>
+        توسعه ماژول‌های مقیاس‌پذیر در یک شرکت SaaS داده‌محور، بهینه‌سازی APIها و ارتقای عملکرد بک‌اند.
+      </p>
+    </div>
+
+    <div class="card">
+      <strong>ModiranToseWeb — Back End Developer</strong><br>
+      <small>2024 - 2025 | ایران</small>
+      <p>
+        طراحی معماری اسکیل‌پذیر، استفاده از Repository-Service Pattern، مستندسازی Swagger، 
+        پیاده‌سازی Queue و Workflow، و بهبود نگه‌داری کد.
+      </p>
+    </div>
+
+    <div class="card">
+      <strong>Journey — Back End Developer</strong><br>
+      <small>2024 | ایران</small>
+      <p>
+        توسعه APIهای امن، پیاده‌سازی SSO، نوشتن تست‌ها، مستندسازی با Swagger، 
+        پیاده‌سازی وبهوک‌ها و امنیت رسانه با Aarvan Cloud.
+      </p>
+    </div>
+
+    <div class="card">
+      <strong>ModernHost — Laravel Developer</strong><br>
+      <small>2022 - 2023 | ایران</small>
+      <p>
+        شروع مسیر بک‌اند با Laravel، توسعه پنل مدیریت، طراحی دیتابیس و مشارکت در دیپلوی و سیستم ورژن کنترل.
+      </p>
+    </div>
+  </div>
+
+  <!-- مهارت‌ها -->
+  <div class="section">
+    <h2>مهارت‌ها</h2>
+    <div class="card">
+      <p><strong>Backend:</strong> Laravel, PHP, REST API, SaaS Architecture, Design Patterns (Strategy, Repository/Service)</p>
+      <p><strong>Tools:</strong> Git, Swagger, MySQL, Queue/Job Systems</p>
+    </div>
+  </div>
+
+  <!-- زبان‌ها -->
+  <div class="section">
+    <h2>زبان‌ها</h2>
+    <div class="card">
+      <p><strong>فارسی:</strong> بومی</p>
+      <p><strong>آذری:</strong> بومی</p>
+      <p><strong>انگلیسی:</strong> ابتدایی</p>
+      <p><strong>ترکی:</strong> محدود</p>
+    </div>
   </div>
 
   <footer>
